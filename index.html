@@ -14,19 +14,21 @@
   </head>
   <body>
     <main>
-      <div class="home hide">
+      <div class="home">
         <h1>Qual é a sua sorte de hoje?</h1>
         <p>Abra o biscoito e descubra!</p>
         <img src="./assets/fortune-cookie.svg" alt="fortune cookie" />
       </div>
-      <div class="reveal">
+      <div class="reveal hide">
         <h1>Aqui está a sua sorte de hoje:</h1>
-        <p class="phrase">
-          Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe
-          o teu.
-        </p>
+        <div class="phrase">
+          <p>
+            Se alguém está tão cansado que não possa te dar um sorriso,
+            deixa-lhe o teu.
+          </p>
+        </div>
         <img src="./assets/opened-cookie.svg" alt="" />
-        <button>Abrir outro biscoito</button>
+        <button id="openAnotherCookie">Abrir outro biscoito</button>
       </div>
     </main>
     <script src="./main.js"></script>

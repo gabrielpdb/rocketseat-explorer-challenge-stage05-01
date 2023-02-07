@@ -29,13 +29,142 @@ input {
 
 main {
   background: #ffffff;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  padding: 48px 64px;
+  box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  padding: 4.8rem 6.4rem;
   width: min(42.8rem, 90%);
   margin-top: -12rem;
   text-align: center;
 }
 
-.home {
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: #34355b;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+img {
+  margin: 2rem 0;
+}
+
+.home img {
+  cursor: pointer;
+}
+
+.home img {
+  animation: shake 0.5s infinite;
+  animation-play-state: paused;
+}
+
+.reveal {
+  position: relative;
+}
+
+.reveal img {
+  margin-top: 10rem;
+}
+
+.phrase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.phrase p {
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+  text-align: center;
+
+  font-family: 'Dancing Script';
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  margin: 0 auto;
+
+  animation: growUp 1000ms ease-in-out forwards;
+}
+
+button {
+  background: #ff9500;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+  border: none;
+  color: #fff;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dd8100;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes growUp {
+  from {
+    transform: translateY(150%) scale(0.1);
+  }
+  to {
+    transform: translateY(0%) scale(1);
+  }
 }
