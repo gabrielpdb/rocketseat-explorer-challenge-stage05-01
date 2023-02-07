@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body,
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 48px 64px;
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+  text-align: center;
+}
+
+.home {
+}
